@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=window.React,t=window.wp.element,n=document.getElementById("wpstorm-panel-user-dashboard");n&&(0,t.createRoot)(n).render((0,e.createElement)((()=>(0,e.createElement)("div",null,"App user")),null))})();
