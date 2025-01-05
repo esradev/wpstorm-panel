@@ -86,6 +86,7 @@ class WPStormPanel {
     wp_localize_script( 'wpstorm-panel-admin', 'wpstorm_panel_object', [
       'api_url' => esc_url_raw( rest_url() ),
       'nonce'   => wp_create_nonce( 'wp_rest' ),
+      'src_assets_url' => WPSTORM_PANEL_URL . 'assets',
     ] );
 
     wp_enqueue_style( 'wpstorm-panel-admin', WPSTORM_PANEL_URL . 'build/admin/index.css', [], WPSTORM_PANEL_VERSION );

@@ -1,5 +1,4 @@
-// index for react app
-import React from "react";
+import { HashRouter } from "react-router-dom";
 import { createRoot } from "@wordpress/element";
 
 import App from "./app";
@@ -8,5 +7,10 @@ import "../index.css";
 const container = document.getElementById("wpstorm-panel-admin-dashboard");
 
 if (container) {
-  createRoot(container).render(<App />);
+  const root = createRoot(container);
+  root.render(
+    <HashRouter>
+      <App />
+    </HashRouter>
+  );
 }
